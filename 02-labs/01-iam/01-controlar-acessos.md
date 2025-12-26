@@ -49,10 +49,10 @@ Quando o controle de acesso e os mecanismos de autenticação não são configur
 ### 🖼️ Diagrama de Arquitetura
 
 - Diagrama base - *AWS re / start (Canvas)*
-![](../../../03-imagens/01-lab-iam/06-diagrama-base-aws.png)
+![](../../03-imagens/01-lab-iam/06-diagrama-base-aws.png)
 
 - Diagrama do fluxo estudado
-![](../../../03-imagens/01-lab-iam/07-diagrama-estudo.jpg)
+![](../../03-imagens/01-lab-iam/07-diagrama-estudo.jpg)
 ---
 
 ## 🧰 Serviços Utilizados e Justificativa
@@ -67,18 +67,18 @@ Quando o controle de acesso e os mecanismos de autenticação não são configur
 ## 🪜 Passo a Passo 
 1. Acessei o console de gerenciamento da AWS e busquei pelo serviço de IAM;
 2. Acessei as configurações de conta de editei a política de senha; 
-![](../../../03-imagens/01-lab-iam/01-edicao-politicas-senha.png)
+![](../../03-imagens/01-lab-iam/01-edicao-politicas-senha.png)
 
 3. Acessei os grupos de usuários criados e associei cada um em seu grupo
-![](../../../03-imagens/01-lab-iam/02-adiciona-usuario-grupo.png)
+![](../../03-imagens/01-lab-iam/02-adiciona-usuario-grupo.png)
 4.  Fiz login e testei os usuários
-![](../../../03-imagens/01-lab-iam/03-login-teste.png)
+![](../../03-imagens/01-lab-iam/03-login-teste.png)
 
 - Usuário 01 tem acesso ao recursos de S3
-![](../../../03-imagens/01-lab-iam/04-user1-acesso-s3.png)
+![](../../03-imagens/01-lab-iam/04-user1-acesso-s3.png)
 
 - Usuário 01 tem acesso negado a recursos de EC2
-![](../../../03-imagens/01-lab-iam/05-user1-acesso-ec2.png)
+![](../../03-imagens/01-lab-iam/05-user1-acesso-ec2.png)
 
 ---
 
