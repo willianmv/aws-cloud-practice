@@ -25,3 +25,11 @@ Esses exercícios contribuem para:
 Consolidar conhecimentos teóricos e práticos para a certificação, estabelecendo uma base sólida em computação em nuvem e serviços AWS.
 
 ---
+
+## 🔗 Acesso rápido aos Labs
+
+| Lab       | Descrição                 | Link                                                     |
+| --------- | ------------------------- | -------------------------------------------------------- |
+| Lab - IAM | Controlar Acessos         | [Acessar Lab](./02-labs/01-iam/01-controlar-acessos.md)  |
+| Lab - S3  | Deploy Site Estático      | [Acessar Lab](./02-labs/02-s3/01-site-estatico.md)       |
+| Lab - EC2 | Bastion Host e Web Server | [Acessar Lab](./02-labs/03-ec2/01-criando-instancias.md) |
