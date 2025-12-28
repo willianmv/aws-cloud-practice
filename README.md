@@ -28,9 +28,10 @@ Consolidar conhecimentos teóricos e práticos para a certificação, estabelece
 
 ## 🔗 Acesso rápido aos Labs
 
-| Organização dos Labs | Descrição                   | Serviços | Link                                                     |
-| -------------------- | --------------------------- | -------- | -------------------------------------------------------- |
-| Lab \| 01 - 01       | Controlar Acesso a Recursos | IAM      | [Acessar Lab](./02-labs/01-iam/01-controlar-acessos.md)  |
-| Lab \| 02 - 01       | Deploy Site Estático        | S3, IAM  | [Acessar Lab](./02-labs/02-s3/01-site-estatico.md)       |
-| Lab \| 03 - 01       | Bastion Host e Web Server   | EC2, IAM | [Acessar Lab](./02-labs/03-ec2/01-criando-instancias.md) |
-| Lab \| 04 - 01       | Gerenciando VPC             | VPC, EC2 | [Acessar Lab](./02-labs/04-network/01-criando-vpc.md)    |
+| Organização dos Labs | Descrição                   | Serviços | Link                                                              |
+| -------------------- | --------------------------- | -------- | ----------------------------------------------------------------- |
+| Lab \| 01 - 01       | Controlar Acesso a Recursos | IAM      | [Acessar Lab](./02-labs/01-iam/01-controlar-acessos.md)           |
+| Lab \| 02 - 01       | Deploy Site Estático        | S3, IAM  | [Acessar Lab](./02-labs/02-s3/01-site-estatico.md)                |
+| Lab \| 03 - 01       | Bastion Host e Web Server   | EC2, IAM | [Acessar Lab](./02-labs/03-ec2/01-criando-instancias.md)          |
+| Lab \| 04 - 01       | Gerenciando VPC             | VPC, EC2 | [Acessar Lab](./02-labs/04-network/01-criando-vpc.md)             |
+| Lab \| 05 - 01       | Configurando AWS CLI        | CLI, IAM | [Acessar Lab](./02-labs/05-cli/01-instalar-configurar-aws-cli.md) |
