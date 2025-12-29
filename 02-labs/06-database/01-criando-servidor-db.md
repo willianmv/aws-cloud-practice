@@ -49,7 +49,7 @@ Uma aplicação web precisa armazenar dados de forma persistente e confiável, m
 
 - O banco de dados é implantado em configuração Multi-AZ, com uma instância primária em uma Zona de Disponibilidade e uma instância de espera em outra, garantindo alta disponibilidade com failover automático.
 
-	![](../../03-imagens/06-lab-rds/06-lab-rds-diagrama.jpg)
+	![](06-lab-rds-diagrama.jpg)
 
 ---
 
@@ -73,24 +73,24 @@ Uma aplicação web precisa armazenar dados de forma persistente e confiável, m
 1. Criei um Security Group:
 	- Esse será aplicado a instância do RDS
 	- Ele só aceita acessos de origem do Security Group da Aplicação Web
-	![](../../03-imagens/06-lab-rds/01-create-db-sg.png)
+	![](01-create-db-sg.png)
 
 2. Criei um grupo de subnet para o Banco de Dados
 	- Selecionei as duas AZs
 	- Selecionei as duas subnets privadas, uma de cada AZ
 	- É onde fica definido que o banco não será exposto a internet
-	![](../../03-imagens/06-lab-rds/02-create-db-subnet.png)
+	![](02-create-db-subnet.png)
 
 3. Criei uma instância de um Banco de Dados Amazon RDS
 	- Associei para conectar a nossa Lab VPC com nossas subnets criadas
-	![](../../03-imagens/06-lab-rds/03-create-rds-db.png)
+	![](03-create-rds-db.png)
 
 4. Acessei uma EC2 para conectar o banco a aplicação
 	- A instância de EC2 permite acesso HTTP disponibilizando um Web App
 	- Nele conseguimos usar as credenciais do banco criado para testar uma conexão
-	![](../../03-imagens/06-lab-rds/04-test-db-conn.png)
+	![](04-test-db-conn.png)
 
-	![](../../03-imagens/06-lab-rds/05-crud-db-example.png)
+	![](05-crud-db-example.png)
 
 ---
 ## 🔐 Segurança

@@ -153,3 +153,77 @@
 - **Internet Gateway, VPC e Route Tables**: não têm custo direto, apenas recursos que trafegam ou instâncias que usam a rede.
 
 ---
+## ⚙️ Observações do Ambiente
+
+A instância está correta, com acesso à internet e permissões de Security Group adequadas. O único motivo pelo qual o lab não roda automaticamente é que o script original usa comandos obsoletos (`yum`, `chkconfig`) e não ajusta permissões ou `DirectoryIndex` do Apache. Tudo que é necessário é atualizar o script para `dnf`, `systemctl` e corrigir permissões — depois disso, a página do lab roda normalmente.
+
+- Ao criar a instância no último passo para adicionar o scripy, não use o padrão, use esse:
+```bash
+
+#!/bin/bash
+sudo dnf install -y httpd php unzip wget
+
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+
+sudo unzip -o lab-app.zip -d /var/www/html/
+
+sudo chown -R apache:apache /var/www/html/
+sudo chmod -R 755 /var/www/html/
+
+sudo sed -i 's/DirectoryIndex .*/DirectoryIndex index.php index.html/' /etc/httpd/conf/httpd.conf
+
+sudo systemctl enable httpd
+sudo systemctl restart httpd
+
+```
+
+---
+
+### Caso já tenha feito com o script padrão e queria corrigir
+
+1. Habilitar para que a instância aceite acesso SSH
+	- Basta adicionar regra no SG
+
+2. No Vocareum, acessar a aba de detalhes e fazer download da chave
+	- Windows -> `.ppk`
+
+3. No painel de EC2, selecionar instância e acessar a aba de conexão por SSH
+	- Lá será possível obter o endereço do servidor que vamos acessar
+
+4. No Putty
+	- Em session adicionar o IP da instância
+	- Em Auth -> Credentials -> Adicionar a chave baixada
+
+5. Ao conectar, execute os seguintes comandos em ordem:
+
+```bash
+
+## Instalar pacotes necessários
+sudo dnf install -y httpd php unzip wget
+
+
+## Baixar os arquivos da página web
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+
+
+## Descompactar na pasta do Apache
+sudo unzip lab-app.zip -d /var/www/html/
+
+
+## Ajustar as permissões do Apache
+sudo chown -R apache:apache /var/www/html/
+sudo chmod -R 755 /var/www/html/
+
+
+## Configurar para iniciar o Apache
+sudo systemctl enable httpd
+sudo systemctl start httpd
+
+
+## Teste para verificar o HTML da página inicial
+curl localhost
+
+
+```
+
+6. Após isso, basta acessar o IP público da instância via HTTP no navegador
