@@ -1,5 +1,19 @@
 # ☁️ Fundamentos AWS - Cloud
 
+## 🔗 Acesso rápido aos Labs
+
+| Organização dos Labs |                                  Descrição                                  |        Serviços        |                                 Link                                 |
+| :------------------: | :-------------------------------------------------------------------------: | :--------------------: | :------------------------------------------------------------------: |
+|    Lab \| 00 - 01    |      DESAFIO - Configurar VPC e subir uma EC2 que serve uma página web      |        VPC, EC2        |         [Acessar Lab](./02-labs/00-challenges/01-ec2-vpc.md)         |
+|    Lab \| 01 - 01    |      Gerenciar usuários, grupos e políticas IAM para controlar acesso.      |          IAM           |       [Acessar Lab](./02-labs/01-iam/01-controlar-acessos.md)        |
+|    Lab \| 02 - 01    |    Criar buckets S3 e hospedar sites estáticos com permissões adequadas.    |        S3, IAM         |          [Acessar Lab](./02-labs/02-s3/01-site-estatico.md)          |
+|    Lab \| 03 - 01    |  Criar e configurar instâncias EC2, acessar via SSH e gerenciar segurança.  |        EC2, IAM        |       [Acessar Lab](./02-labs/03-ec2/01-criando-instancias.md)       |
+|    Lab \| 04 - 01    |      Criar VPC, subnets, roteamento e integrar EC2 a uma rede segura.       |        VPC, EC2        |        [Acessar Lab](./02-labs/04-network/01-criando-vpc.md)         |
+|    Lab \| 05 - 01    | Instalar e configurar AWS CLI para gerenciar recursos via linha de comando. |        CLI, IAM        |  [Acessar Lab](./02-labs/05-cli/01-instalar-configurar-aws-cli.md)   |
+|    Lab \| 06 - 01    |   Criar bancos de dados RDS e conectar aplicações com segurança de rede.    |     RDS, EC2, VPC      |    [Acessar Lab](./02-labs/06-database/01-criando-servidor-db.md)    |
+|    Lab \| 07 - 01    |     Configurar Auto Scaling e Load Balancers para alta disponibilidade.     | EC2, ELB, Auto Scaling | [Acessar Lab](./02-labs/07-scaling/01-dimensionar-balancer-carga.md) |
+
+---
 ## 📚 Sobre este repositório
 
 Repositório dedicado ao estudo dos **fundamentos da AWS**, visando a preparação para certificações.
@@ -25,15 +39,3 @@ Esses exercícios contribuem para:
 Consolidar conhecimentos teóricos e práticos para a certificação, estabelecendo uma base sólida em computação em nuvem e serviços AWS.
 
 ---
-
-## 🔗 Acesso rápido aos Labs
-
-| Organização dos Labs |                                  Descrição                                  |        Serviços        |                                 Link                                 |
-| :------------------: | :-------------------------------------------------------------------------: | :--------------------: | :------------------------------------------------------------------: |
-|    Lab \| 01 - 01    |      Gerenciar usuários, grupos e políticas IAM para controlar acesso.      |          IAM           |       [Acessar Lab](./02-labs/01-iam/01-controlar-acessos.md)        |
-|    Lab \| 02 - 01    |    Criar buckets S3 e hospedar sites estáticos com permissões adequadas.    |        S3, IAM         |          [Acessar Lab](./02-labs/02-s3/01-site-estatico.md)          |
-|    Lab \| 03 - 01    |  Criar e configurar instâncias EC2, acessar via SSH e gerenciar segurança.  |        EC2, IAM        |       [Acessar Lab](./02-labs/03-ec2/01-criando-instancias.md)       |
-|    Lab \| 04 - 01    |      Criar VPC, subnets, roteamento e integrar EC2 a uma rede segura.       |        VPC, EC2        |        [Acessar Lab](./02-labs/04-network/01-criando-vpc.md)         |
-|    Lab \| 05 - 01    | Instalar e configurar AWS CLI para gerenciar recursos via linha de comando. |        CLI, IAM        |  [Acessar Lab](./02-labs/05-cli/01-instalar-configurar-aws-cli.md)   |
-|    Lab \| 06 - 01    |   Criar bancos de dados RDS e conectar aplicações com segurança de rede.    |     RDS, EC2, VPC      |    [Acessar Lab](./02-labs/06-database/01-criando-servidor-db.md)    |
-|    Lab \| 07 - 01    |     Configurar Auto Scaling e Load Balancers para alta disponibilidade.     | EC2, ELB, Auto Scaling | [Acessar Lab](./02-labs/07-scaling/01-dimensionar-balancer-carga.md) |

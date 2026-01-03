@@ -157,7 +157,7 @@
 
 A instância está correta, com acesso à internet e permissões de Security Group adequadas. O único motivo pelo qual o lab não roda automaticamente é que o script original usa comandos obsoletos (`yum`, `chkconfig`) e não ajusta permissões ou `DirectoryIndex` do Apache. Tudo que é necessário é atualizar o script para `dnf`, `systemctl` e corrigir permissões — depois disso, a página do lab roda normalmente.
 
-- Ao criar a instância no último passo para adicionar o scripy, não use o padrão, use esse:
+- Ao criar a instância no último passo para adicionar o script, não use o padrão, use esse:
 ```bash
 
 #!/bin/bash
